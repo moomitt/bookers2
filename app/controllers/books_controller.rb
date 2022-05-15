@@ -41,7 +41,7 @@ class BooksController < ApplicationController
     redirect_to books_path
   end
   
-  private
+  private                         #ストロングパラメータ
   def book_params
     params.require(:book).permit(:title,:body)
   end
